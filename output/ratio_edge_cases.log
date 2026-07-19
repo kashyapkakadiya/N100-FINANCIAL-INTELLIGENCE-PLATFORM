@@ -1,0 +1,216 @@
+# Ratio Engine Edge Case Log - Day 13
+
+## INDIGO (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=4953.54%  source=24.50%  diff=4929.04pt
+- ROE:  computed=892.57%  source=nan%  diff=nanpt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## BEL (Industrials, latest year 2024-03)
+- ROCE: computed=3628.35%  source=34.60%  diff=3593.75pt
+- ROE:  computed=4744.05%  source=26.30%  diff=4717.75pt
+- Category: EXTREME CAPITAL STRUCTURE - mathematically correct, capital employed base unusually thin (verify before using in cross-company comparisons)
+
+## HAL (Industrials, latest year 2024-03)
+- ROCE: computed=2590.99%  source=38.90%  diff=2552.09pt
+- ROE:  computed=3816.58%  source=28.90%  diff=3787.68pt
+- Category: EXTREME CAPITAL STRUCTURE - mathematically correct, capital employed base unusually thin (verify before using in cross-company comparisons)
+
+## ICICIPRULI (Financials, latest year 2024-03)
+- ROCE: computed=753.98%  source=8.75%  diff=745.23pt
+- ROE:  computed=7.73%  source=8.07%  diff=0.34pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## HDFCLIFE (Financials, latest year 2024-03)
+- ROCE: computed=645.95%  source=6.61%  diff=639.34pt
+- ROE:  computed=10.73%  source=11.40%  diff=0.67pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## HEROMOTOCO (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=173.71%  source=29.10%  diff=144.61pt
+- ROE:  computed=21.14%  source=22.00%  diff=0.86pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## ICICIGI (Financials, latest year 2024-03)
+- ROCE: computed=145.23%  source=22.50%  diff=122.73pt
+- ROE:  computed=15.72%  source=17.00%  diff=1.28pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## HINDALCO (Materials, latest year 2024-03)
+- ROCE: computed=113.58%  source=11.30%  diff=102.28pt
+- ROE:  computed=9.57%  source=10.20%  diff=0.63pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## LT (Industrials, latest year 2024-03)
+- ROCE: computed=118.53%  source=17.18%  diff=101.35pt
+- ROE:  computed=77.67%  source=10.49%  diff=67.18pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## ADANIGREEN (Energy, latest year 2024-03)
+- ROCE: computed=7.25%  source=96.50%  diff=89.25pt
+- ROE:  computed=12.81%  source=14.70%  diff=1.89pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## HINDUNILVR (Consumer Staples, latest year 2024-03)
+- ROCE: computed=87.32%  source=27.20%  diff=60.12pt
+- ROE:  computed=20.07%  source=20.20%  diff=0.13pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## CIPLA (Healthcare, latest year 2024-03)
+- ROCE: computed=67.60%  source=22.80%  diff=44.80pt
+- ROE:  computed=15.55%  source=16.80%  diff=1.25pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## NESTLEIND (Consumer Staples, latest year 2024-03)
+- ROCE: computed=143.15%  source=185.43%  diff=42.28pt
+- ROE:  computed=117.75%  source=135.61%  diff=17.86pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## COALINDIA (Materials, latest year 2024-03)
+- ROCE: computed=98.17%  source=63.60%  diff=34.57pt
+- ROE:  computed=45.17%  source=52.00%  diff=6.83pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## LICI (Financials, latest year 2024-03)
+- ROCE: computed=39.05%  source=63.79%  diff=24.74pt
+- ROE:  computed=49.45%  source=63.61%  diff=14.16pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## M&M (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=11.54%  source=26.98%  diff=15.44pt
+- ROE:  computed=18.54%  source=17.99%  diff=0.55pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## ADANIPOWER (Energy, latest year 2024-03)
+- ROCE: computed=18.39%  source=32.20%  diff=13.81pt
+- ROE:  computed=48.28%  source=57.10%  diff=8.82pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## SBILIFE (Financials, latest year 2024-03)
+- ROCE: computed=1.14%  source=13.20%  diff=12.06pt
+- ROE:  computed=12.70%  source=12.00%  diff=0.70pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## IRCTC (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=42.83%  source=53.80%  diff=10.97pt
+- ROE:  computed=34.40%  source=40.40%  diff=6.00pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## EICHERMOT (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=20.21%  source=31.10%  diff=10.89pt
+- ROE:  computed=22.17%  source=24.20%  diff=2.03pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## BAJAJHLDNG (Financials, latest year 2024-03)
+- ROCE: computed=2.81%  source=13.10%  diff=10.29pt
+- ROE:  computed=13.58%  source=14.80%  diff=1.22pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## ASIANPAINT (Materials, latest year 2024-03)
+- ROCE: computed=31.75%  source=41.75%  diff=10.00pt
+- ROE:  computed=29.68%  source=31.45%  diff=1.77pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## BAJAJFINSV (Financials, latest year 2024-03)
+- ROCE: computed=11.45%  source=21.14%  diff=9.69pt
+- ROE:  computed=25.85%  source=11.72%  diff=14.13pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## ABB (Industrials, latest year 2024-03)
+- ROCE: computed=36.54%  source=46.00%  diff=9.46pt
+- ROE:  computed=32.47%  source=34.90%  diff=2.43pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## GODREJCP (Consumer Staples, latest year 2024-03)
+- ROCE: computed=17.17%  source=26.49%  diff=9.32pt
+- ROE:  computed=-4.45%  source=6.77%  diff=11.22pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## LTIM (Information Technology, latest year 2024-03)
+- ROCE: computed=25.21%  source=34.10%  diff=8.89pt
+- ROE:  computed=22.90%  source=26.04%  diff=3.14pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## MARUTI (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=15.59%  source=23.67%  diff=8.08pt
+- ROE:  computed=15.75%  source=15.75%  diff=0.00pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## SIEMENS (Industrials, latest year 2024-09)
+- ROCE: computed=17.74%  source=25.60%  diff=7.86pt
+- ROE:  computed=17.70%  source=19.10%  diff=1.40pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## BAJFINANCE (Financials, latest year 2024-03)
+- ROCE: computed=4.17%  source=11.90%  diff=7.73pt
+- ROE:  computed=18.84%  source=22.10%  diff=3.26pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## SHRIRAMFIN (Financials, latest year 2024-03)
+- ROCE: computed=4.06%  source=11.30%  diff=7.24pt
+- ROE:  computed=15.12%  source=15.90%  diff=0.78pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## INFY (Information Technology, latest year 2024-03)
+- ROCE: computed=32.91%  source=40.00%  diff=7.09pt
+- ROE:  computed=29.79%  source=31.80%  diff=2.01pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## CHOLAFIN (Financials, latest year 2024-03)
+- ROCE: computed=3.37%  source=10.40%  diff=7.03pt
+- ROE:  computed=17.46%  source=20.20%  diff=2.74pt
+- Category: DATA SOURCE ISSUE - opm_percentage field internally inconsistent with sales/operating_profit
+
+## BOSCHLTD (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=13.76%  source=20.60%  diff=6.84pt
+- ROE:  computed=20.64%  source=16.00%  diff=4.64pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## PFC (Financials, latest year 2024-03)
+- ROCE: computed=3.48%  source=9.96%  diff=6.48pt
+- ROE:  computed=26.16%  source=19.49%  diff=6.67pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## BAJAJ-AUTO (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=27.21%  source=33.50%  diff=6.29pt
+- ROE:  computed=26.61%  source=26.50%  diff=0.11pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## DRREDDY (Healthcare, latest year 2024-03)
+- ROCE: computed=21.36%  source=26.50%  diff=5.14pt
+- ROE:  computed=19.74%  source=21.40%  diff=1.66pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## TCS (Information Technology, latest year 2024-03)
+- ROCE: computed=60.21%  source=64.30%  diff=4.09pt
+- ROE:  computed=50.94%  source=0.52%  diff=50.42pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## ADANIENT (Industrials, latest year 2024-03)
+- ROCE: computed=7.98%  source=11.60%  diff=3.62pt
+- ROE:  computed=8.53%  source=13.64%  diff=5.11pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## BPCL (Energy, latest year 2024-03)
+- ROCE: computed=28.65%  source=32.10%  diff=3.45pt
+- ROE:  computed=35.51%  source=41.90%  diff=6.39pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## TATAMOTORS (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=16.79%  source=20.10%  diff=3.31pt
+- ROE:  computed=37.46%  source=49.40%  diff=11.94pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## TRENT (Consumer Discretionary, latest year 2024-03)
+- ROCE: computed=22.33%  source=23.80%  diff=1.47pt
+- ROE:  computed=36.31%  source=27.20%  diff=9.11pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## TATASTEEL (Materials, latest year 2024-03)
+- ROCE: computed=6.90%  source=7.02%  diff=0.12pt
+- ROE:  computed=-5.33%  source=6.55%  diff=11.88pt
+- Category: VERSION DIFFERENCE - source pre-computed value likely reflects different period/method than Ratio Engine
+
+## PNB (Financials, latest year 2024-03)
+- ROCE: computed=nan%  source=1.63%  diff=nanpt
+- ROE:  computed=61.32%  source=8.70%  diff=52.62pt
+- Category: FORMULA DISCREPANCY - ROCE/ROE formula not designed for insurance/NBFC balance sheet structure
