@@ -1,0 +1,74 @@
+# screener_config.yaml
+# Analyst-editable thresholds. Edit values here to create new screens without
+# touching engine.py.
+
+metrics:
+  min_roe:               { column: return_on_equity_pct,   op: ">=" }
+  max_de:                { column: debt_to_equity,          op: "<=" }
+  exact_de:               { column: debt_to_equity,          op: "==" }
+  min_fcf:                { column: free_cash_flow_cr,       op: ">"  }
+  min_revenue_cagr_5yr:    { column: revenue_cagr_5yr,        op: ">=" }
+  min_pat_cagr_5yr:        { column: pat_cagr_5yr,            op: ">=" }
+  min_eps_cagr_5yr:        { column: eps_cagr_5yr,            op: ">=" }
+  min_opm:                { column: operating_profit_margin_pct, op: ">=" }
+  max_pe:                 { column: pe_ratio,               op: "<=" }
+  max_pb:                 { column: pb_ratio,               op: "<=" }
+  min_dividend_yield:       { column: dividend_yield_pct,       op: ">=" }
+  max_dividend_payout:      { column: dividend_payout,          op: "<=" }
+  min_icr:                { column: interest_coverage,        op: ">=" }
+  min_market_cap:           { column: market_cap_crore,        op: ">=" }
+  min_net_profit:           { column: net_profit,             op: ">=" }
+  min_asset_turnover:        { column: asset_turnover,          op: ">=" }
+  min_sales:               { column: sales,                  op: ">=" }
+
+# D/E-based ceiling filters (max_de only) automatically skip Financials-sector
+# companies per project spec - high leverage is structurally normal for
+# banks/NBFCs. This does NOT apply to exact_de (see engine.py comment).
+de_exempt_sector: Financials
+
+presets:
+  quality_compounder:
+    label: "Quality Compounder"
+    filters:
+      min_roe: 15
+      max_de: 1.0
+      min_fcf: 0
+      min_revenue_cagr_5yr: 10
+
+  value_pick:
+    label: "Value Pick"
+    filters:
+      max_pe: 20
+      max_pb: 3.0
+      max_de: 2.0
+      min_dividend_yield: 1
+
+  growth_accelerator:
+    label: "Growth Accelerator"
+    filters:
+      min_pat_cagr_5yr: 20
+      min_revenue_cagr_5yr: 15
+      max_de: 2.0
+
+  dividend_champion:
+    label: "Dividend Champion"
+    filters:
+      min_dividend_yield: 2
+      max_dividend_payout: 80
+      min_fcf: 0
+
+  debt_free_blue_chip:
+    label: "Debt-Free Blue Chip"
+    filters:
+      exact_de: 0
+      min_roe: 12
+      min_sales: 5000
+
+  # Turnaround Watch needs revenue_cagr_3yr (not a stored column) and a
+  # year-over-year D/E trend check - both require multi-year logic beyond a
+  # single-snapshot threshold, so this preset is handled by a dedicated
+  # function (screen_turnaround_watch) in engine.py, not this generic filter dict.
+  turnaround_watch:
+    label: "Turnaround Watch"
+    filters:
+      min_revenue_cagr_3yr: 10
