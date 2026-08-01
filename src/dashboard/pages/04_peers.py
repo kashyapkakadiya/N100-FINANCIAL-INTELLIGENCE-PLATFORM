@@ -84,7 +84,7 @@ def _highlight_benchmark(row):
     return ["background-color: #FFD966" if is_bench else "" for _ in row]
 
 
-styled = display.style.apply(_highlight_benchmark, axis=1).format(precision=2)
+styled = display.style.apply(_highlight_benchmark, axis=1).format(precision=2, na_rep="N/A")
 st.dataframe(styled, width='stretch', height=300)
 
 conn.close()

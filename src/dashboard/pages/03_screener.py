@@ -96,7 +96,11 @@ else:
     display = result[display_cols].copy()
     display.columns = ["Ticker", "Company", "Sector", "Composite Score", "ROE %", "D/E",
                         "FCF (₹Cr)", "Rev CAGR 5yr %", "P/E", "Div Yield %"]
-    st.dataframe(display.set_index("Ticker"), width='stretch', height=500)
+    display_shown = display.set_index("Ticker")
+    numeric_cols = display_shown.select_dtypes(include="number").columns
+    display_shown[numeric_cols] = display_shown[numeric_cols].round(2)
+    display_shown = display_shown.astype(str).replace(["nan", "None"], "N/A")
+    st.dataframe(display_shown, width='stretch', height=500)
 
     csv_bytes = display.to_csv(index=False).encode("utf-8")
     st.download_button(
