@@ -53,12 +53,16 @@ with st.sidebar:
         if preset_cols[i % 2].button(label, use_container_width=True):
             new_values = dict(PERMISSIVE_DEFAULTS)
             preset_filters = config["presets"][preset_key].get("filters", {})
+            extra_filters = {}
             for fkey, fval in preset_filters.items():
                 if fkey in SLIDER_DEFS:
                     new_values[fkey] = float(fval)
+                else:
+                    extra_filters[fkey] = fval
             for skey, sval in new_values.items():
                 st.session_state[skey] = sval
             st.session_state["_active_preset"] = preset_key
+            st.session_state["_preset_extra_filters"] = extra_filters
             st.rerun()
 
     st.subheader("Custom Filters")
@@ -66,7 +70,9 @@ with st.sidebar:
         for k, v in PERMISSIVE_DEFAULTS.items():
             st.session_state[k] = v
         st.session_state.pop("_active_preset", None)
-        st.rerun()    
+        st.session_state.pop("_preset_extra_filters", None)
+        st.rerun()
+
     for key, (label, lo, hi, default, step) in SLIDER_DEFS.items():
         if key not in st.session_state:
             st.session_state[key] = default
@@ -83,6 +89,7 @@ else:
         key: val for key, val in slider_values.items()
         if val != PERMISSIVE_DEFAULTS[key]
     }
+    active_filters.update(st.session_state.get("_preset_extra_filters", {}))
     result = apply_filters(universe, active_filters, config)
 
 st.markdown(f"### {len(result)} companies match your filters")
