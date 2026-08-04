@@ -1,0 +1,18 @@
+company_id,metric_type,raw_text,reason
+SBILIFE,compounded_sales_growth,TTM:            43%,"TTM period - no leading digit, regex requires \d+ Years"
+SBILIFE,compounded_profit_growth,TTM:                 18%,"TTM period - no leading digit, regex requires \d+ Years"
+SBILIFE,stock_price_cagr,     1 Year:         -2%,Negative percentage - regex value group excludes '-'
+SBILIFE,roe,Last Year:      12%,"'Last Year' text - no leading digit, regex requires \d+ Years"
+TCS,compounded_sales_growth,TTM:            5%             ,"TTM period - no leading digit, regex requires \d+ Years"
+TCS,compounded_profit_growth,TTM:                 8%,"TTM period - no leading digit, regex requires \d+ Years"
+TCS,roe,Last Year:       52%,"'Last Year' text - no leading digit, regex requires \d+ Years"
+WIPRO,stock_price_cagr,      3 Years:      -1%,Negative percentage - regex value group excludes '-'
+WIPRO,compounded_sales_growth,TTM:           -3%,"TTM period - no leading digit, regex requires \d+ Years"
+WIPRO,compounded_profit_growth,TTM:                 1%,"TTM period - no leading digit, regex requires \d+ Years"
+WIPRO,roe,Last Year:       14%,"'Last Year' text - no leading digit, regex requires \d+ Years"
+HDFCBANK,compounded_sales_growth,TTM:            47%,"TTM period - no leading digit, regex requires \d+ Years"
+HDFCBANK,compounded_profit_growth,TTM:                27%,"TTM period - no leading digit, regex requires \d+ Years"
+HDFCBANK,roe,Last Year:    17%,"'Last Year' text - no leading digit, regex requires \d+ Years"
+INFY,compounded_sales_growth,TTM:            3%,"TTM period - no leading digit, regex requires \d+ Years"
+INFY,compounded_profit_growth,TTM:                 8%,"TTM period - no leading digit, regex requires \d+ Years"
+INFY,roe,Last Year:     32%,"'Last Year' text - no leading digit, regex requires \d+ Years"
