@@ -3,6 +3,7 @@ cashflow_kpis.py — Module 2: Cash Flow KPIs & Capital Allocation (Day 11)
 """
 
 from __future__ import annotations
+import pandas as pd
 from typing import Optional, List, Dict
 
 
@@ -114,3 +115,41 @@ def classify_capital_allocation(cfo: float, cfi: float, cff: float,
         "cfo_sign": signs[0], "cfi_sign": signs[1], "cff_sign": signs[2],
         "pattern_label": label,
     }
+
+# ---------------------------------------------------------------------------
+# Sprint 5 (Day 31) — company-level aggregation functions, additive.
+# ---------------------------------------------------------------------------
+
+def cfo_quality_score_numeric(cfo_values, pat_values):
+    """Returns (score, label) - score is the average CFO/PAT ratio over up
+    to 5 years, None if no valid PAT to divide by."""
+    ratios = []
+    for cfo, pat in zip(cfo_values, pat_values):
+        if pat is None or pat == 0 or pd.isna(pat) or pd.isna(cfo):
+            continue
+        ratios.append(cfo / pat)
+    if not ratios:
+        return None, None
+    avg_ratio = sum(ratios) / len(ratios)
+    if avg_ratio > 1.0:
+        label = "High Quality"
+    elif avg_ratio >= 0.5:
+        label = "Moderate"
+    else:
+        label = "Accrual Risk"
+    return round(avg_ratio, 3), label
+
+
+def detect_distress_signal(latest_cfo, latest_cff) -> bool:
+    if latest_cfo is None or latest_cff is None or pd.isna(latest_cfo) or pd.isna(latest_cff):
+        return False
+    return latest_cfo < 0 and latest_cff > 0
+
+
+def detect_deleveraging(latest_cff, borrowings_series) -> bool:
+    if latest_cff is None or pd.isna(latest_cff) or latest_cff >= 0:
+        return False
+    valid = borrowings_series.dropna()
+    if len(valid) < 2:
+        return False
+    return valid.iloc[-1] < valid.iloc[-2]
