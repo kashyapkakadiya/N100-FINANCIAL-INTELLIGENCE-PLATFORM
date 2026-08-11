@@ -1,0 +1,93 @@
+company_id,cluster_id,cluster_name,distance_from_centroid
+ABB,3,"Quality Growth, Low Leverage",1.6816
+ADANIENSOL,3,"Quality Growth, Low Leverage",1.3909
+ADANIENT,3,"Quality Growth, Low Leverage",1.3176
+ADANIGREEN,2,Leveraged Growth,1.8648
+ADANIPORTS,3,"Quality Growth, Low Leverage",1.786
+ADANIPOWER,0,Elite Return Compounders,1.0623
+AMBUJACEM,1,Stable Core Holdings,0.8783
+APOLLOHOSP,3,"Quality Growth, Low Leverage",0.7543
+ASIANPAINT,3,"Quality Growth, Low Leverage",0.9362
+ATGL,3,"Quality Growth, Low Leverage",0.9929
+BAJAJ-AUTO,1,Stable Core Holdings,1.3001
+AXISBANK,2,Leveraged Growth,1.0395
+BAJAJFINSV,2,Leveraged Growth,1.13
+BAJAJHLDNG,4,Asset-Light / High-Margin,2.0667
+BAJFINANCE,2,Leveraged Growth,1.7322
+BANKBARODA,2,Leveraged Growth,0.7925
+BHARTIARTL,4,Asset-Light / High-Margin,1.5244
+BEL,0,Elite Return Compounders,1.0577
+BHEL,1,Stable Core Holdings,2.3881
+BOSCHLTD,1,Stable Core Holdings,0.8953
+BPCL,1,Stable Core Holdings,1.3092
+BRITANNIA,0,Elite Return Compounders,1.3792
+CANBK,2,Leveraged Growth,0.6639
+CHOLAFIN,2,Leveraged Growth,1.164
+CIPLA,4,Asset-Light / High-Margin,1.7463
+COALINDIA,0,Elite Return Compounders,1.9316
+DABUR,1,Stable Core Holdings,0.908
+DIVISLAB,3,"Quality Growth, Low Leverage",1.3662
+DLF,1,Stable Core Holdings,1.7116
+DMART,3,"Quality Growth, Low Leverage",1.2214
+DRREDDY,1,Stable Core Holdings,1.4445
+EICHERMOT,1,Stable Core Holdings,0.7326
+GAIL,1,Stable Core Holdings,0.9333
+GODREJCP,1,Stable Core Holdings,0.8803
+GRASIM,3,"Quality Growth, Low Leverage",1.398
+HAL,0,Elite Return Compounders,1.1152
+HAVELLS,1,Stable Core Holdings,1.3868
+HCLTECH,3,"Quality Growth, Low Leverage",0.7217
+HDFCBANK,2,Leveraged Growth,0.8019
+HDFCLIFE,4,Asset-Light / High-Margin,1.8762
+HEROMOTOCO,4,Asset-Light / High-Margin,1.9624
+HINDALCO,4,Asset-Light / High-Margin,0.6114
+HINDUNILVR,4,Asset-Light / High-Margin,0.7847
+ICICIBANK,2,Leveraged Growth,0.4511
+ICICIGI,4,Asset-Light / High-Margin,1.1253
+ICICIPRULI,4,Asset-Light / High-Margin,1.8699
+INDUSINDBK,2,Leveraged Growth,0.7662
+INFY,1,Stable Core Holdings,1.1982
+IOC,1,Stable Core Holdings,0.7415
+IRCTC,3,"Quality Growth, Low Leverage",1.3554
+IRFC,2,Leveraged Growth,1.6156
+ITC,1,Stable Core Holdings,1.404
+JINDALSTEL,1,Stable Core Holdings,1.1577
+JIOFIN,4,Asset-Light / High-Margin,1.5322
+JSWENERGY,1,Stable Core Holdings,1.4716
+JSWSTEEL,3,"Quality Growth, Low Leverage",0.935
+KOTAKBANK,2,Leveraged Growth,1.7751
+LICI,1,Stable Core Holdings,2.3867
+LODHA,1,Stable Core Holdings,1.593
+LT,0,Elite Return Compounders,1.3387
+LTIM,3,"Quality Growth, Low Leverage",1.3808
+M&M,1,Stable Core Holdings,0.697
+MARUTI,1,Stable Core Holdings,0.6251
+MOTHERSON,1,Stable Core Holdings,0.6534
+NAUKRI,3,"Quality Growth, Low Leverage",1.1635
+NESTLEIND,0,Elite Return Compounders,1.4363
+NHPC,1,Stable Core Holdings,2.0216
+NTPC,1,Stable Core Holdings,1.0034
+ONGC,1,Stable Core Holdings,0.4748
+PFC,2,Leveraged Growth,1.5422
+PIDILITIND,3,"Quality Growth, Low Leverage",0.8347
+PNB,0,Elite Return Compounders,2.3498
+POWERGRID,4,Asset-Light / High-Margin,2.0442
+RECLTD,2,Leveraged Growth,1.715
+RELIANCE,1,Stable Core Holdings,0.6924
+SBILIFE,3,"Quality Growth, Low Leverage",2.3021
+SBIN,1,Stable Core Holdings,1.9666
+SHREECEM,1,Stable Core Holdings,0.7066
+SHRIRAMFIN,2,Leveraged Growth,1.3456
+SIEMENS,3,"Quality Growth, Low Leverage",1.4633
+SUNPHARMA,3,"Quality Growth, Low Leverage",1.5082
+TATACONSUM,1,Stable Core Holdings,1.8584
+TATAMOTORS,1,Stable Core Holdings,1.3708
+TATAPOWER,1,Stable Core Holdings,1.4175
+TATASTEEL,1,Stable Core Holdings,0.9365
+TCS,0,Elite Return Compounders,1.1162
+TECHM,1,Stable Core Holdings,0.9977
+TITAN,3,"Quality Growth, Low Leverage",1.498
+TORNTPHARM,1,Stable Core Holdings,0.905
+TRENT,3,"Quality Growth, Low Leverage",1.8652
+TVSMOTOR,3,"Quality Growth, Low Leverage",1.6576
+INDIGO,0,Elite Return Compounders,2.287

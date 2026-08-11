@@ -1,0 +1,49 @@
+company_id,feature,sector,imputed_value
+SBIN,return_on_equity_pct,Financials,15.742
+SBIN,debt_to_equity,Financials,4.397
+JIOFIN,revenue_cagr_5yr,Financials,17.364
+ABB,fcf_cagr_5yr,Industrials,37.79
+ADANIENSOL,fcf_cagr_5yr,Energy,12.694
+ADANIENT,fcf_cagr_5yr,Industrials,37.79
+ADANIGREEN,fcf_cagr_5yr,Energy,12.694
+AMBUJACEM,fcf_cagr_5yr,Materials,9.987
+ATGL,fcf_cagr_5yr,Energy,12.694
+AXISBANK,fcf_cagr_5yr,Financials,-7.36
+BAJAJFINSV,fcf_cagr_5yr,Financials,-7.36
+BAJFINANCE,fcf_cagr_5yr,Financials,-7.36
+BANKBARODA,fcf_cagr_5yr,Financials,-7.36
+BHARTIARTL,fcf_cagr_5yr,Communication Services,12.587
+BEL,fcf_cagr_5yr,Industrials,37.79
+BHEL,fcf_cagr_5yr,Industrials,37.79
+BPCL,fcf_cagr_5yr,Energy,12.694
+CHOLAFIN,fcf_cagr_5yr,Financials,-7.36
+DMART,fcf_cagr_5yr,Consumer Discretionary,10.028
+GODREJCP,fcf_cagr_5yr,Consumer Staples,8.961
+GRASIM,fcf_cagr_5yr,Industrials,37.79
+HAL,fcf_cagr_5yr,Industrials,37.79
+HDFCBANK,fcf_cagr_5yr,Financials,-7.36
+HDFCLIFE,fcf_cagr_5yr,Financials,-7.36
+INDUSINDBK,fcf_cagr_5yr,Financials,-7.36
+IOC,fcf_cagr_5yr,Energy,12.694
+IRFC,fcf_cagr_5yr,Financials,-7.36
+JINDALSTEL,fcf_cagr_5yr,Materials,9.987
+JIOFIN,fcf_cagr_5yr,Financials,-7.36
+JSWENERGY,fcf_cagr_5yr,Energy,12.694
+JSWSTEEL,fcf_cagr_5yr,Materials,9.987
+KOTAKBANK,fcf_cagr_5yr,Financials,-7.36
+LODHA,fcf_cagr_5yr,Real Estate,-13.167
+LT,fcf_cagr_5yr,Industrials,37.79
+M&M,fcf_cagr_5yr,Consumer Discretionary,10.028
+NAUKRI,fcf_cagr_5yr,Communication Services,12.587
+NTPC,fcf_cagr_5yr,Energy,12.694
+PFC,fcf_cagr_5yr,Financials,-7.36
+PNB,fcf_cagr_5yr,Financials,-7.36
+RECLTD,fcf_cagr_5yr,Financials,-7.36
+RELIANCE,fcf_cagr_5yr,Energy,12.694
+SBILIFE,fcf_cagr_5yr,Financials,-7.36
+SHRIRAMFIN,fcf_cagr_5yr,Financials,-7.36
+TATAMOTORS,fcf_cagr_5yr,Consumer Discretionary,10.028
+TATASTEEL,fcf_cagr_5yr,Materials,9.987
+TRENT,fcf_cagr_5yr,Consumer Discretionary,10.028
+TVSMOTOR,fcf_cagr_5yr,Consumer Discretionary,10.028
+PNB,operating_profit_margin_pct,Financials,40.154
