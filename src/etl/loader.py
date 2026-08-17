@@ -24,6 +24,8 @@ OUTPUT_DIR = PROJECT_ROOT / "output"
 DB_PATH = PROJECT_ROOT / "data" / "nifty100.db"
 SCHEMA_PATH = PROJECT_ROOT / "db" / "schema.sql"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+RAW_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "raw"
+SUP_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "supporting"
 
 _CAGR_PATTERN = re.compile(r"(\d+)\s*Years?:?\s*([\d.]+)\s*%")
 
@@ -292,3 +294,42 @@ if __name__ == "__main__":
     print("\n=== LOAD SUMMARY ===")
     print(audit_df.to_string(index=False))
     print(f"\nFK check violations: {fk_violations}")
+
+# --- Added for Day 41: raw per-file loaders, used by test_loader.py to
+# verify row counts/columns directly against source files ---
+
+def load_companies_raw():
+    return pd.read_excel(RAW_DIR / "companies.xlsx", sheet_name="Companies", header=1)
+
+def load_profitandloss_raw():
+    return pd.read_excel(RAW_DIR / "profitandloss.xlsx", sheet_name="Profit & Loss", header=1)
+
+def load_balancesheet_raw():
+    return pd.read_excel(RAW_DIR / "balancesheet.xlsx", sheet_name="Balance Sheet", header=1)
+
+def load_cashflow_raw():
+    return pd.read_excel(RAW_DIR / "cashflow.xlsx", sheet_name="Cash Flow", header=1)
+
+def load_analysis_raw():
+    return pd.read_excel(RAW_DIR / "analysis.xlsx", sheet_name="Analysis", header=1)
+
+def load_documents_raw():
+    return pd.read_excel(RAW_DIR / "documents.xlsx", sheet_name="Documents", header=1)
+
+def load_prosandcons_raw():
+    return pd.read_excel(RAW_DIR / "prosandcons.xlsx", sheet_name="Pros & Cons", header=1)
+
+def load_sectors_raw():
+    return pd.read_excel(SUP_DIR / "sectors.xlsx", sheet_name="Sheet1", header=0)
+
+def load_stock_prices_raw():
+    return pd.read_excel(SUP_DIR / "stock_prices.xlsx", sheet_name="Sheet1", header=0)
+
+def load_market_cap_raw():
+    return pd.read_excel(SUP_DIR / "market_cap.xlsx", sheet_name="Sheet1", header=0)
+
+def load_financial_ratios_raw():
+    return pd.read_excel(SUP_DIR / "financial_ratios.xlsx", sheet_name="Sheet1", header=0)
+
+def load_peer_groups_raw():
+    return pd.read_excel(SUP_DIR / "peer_groups.xlsx", sheet_name="Sheet1", header=0)

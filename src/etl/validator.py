@@ -16,6 +16,28 @@ def _v(rule_id, severity, table, company_id, year, field, issue, raw_value=None)
             "issue": issue, "raw_value": raw_value}
 
 
+def dq01_company_pk_uniqueness(companies: pd.DataFrame) -> List[Violation]:
+    out = []
+    dupes = companies["id"][companies["id"].duplicated(keep=False)]
+    for cid in dupes.unique():
+        out.append(_v("DQ-01", "CRITICAL", "companies", cid, None, "id", f"Duplicate company id '{cid}'"))
+    return out
+ 
+def dq02_annual_pk_uniqueness(df: pd.DataFrame, table_name: str) -> List[Violation]:
+    out = []
+    dupe_mask = df.duplicated(subset=["company_id", "year"], keep=False)
+    for _, row in df[dupe_mask].iterrows():
+        out.append(_v("DQ-02", "CRITICAL", table_name, row["company_id"], row["year"], "company_id+year", "Duplicate pair"))
+    return out
+ 
+def dq03_fk_integrity(df: pd.DataFrame, table_name: str, valid_ids: set) -> List[Violation]:
+    out = []
+    orphans = df[~df["company_id"].isin(valid_ids)]
+    for _, row in orphans.iterrows():
+        out.append(_v("DQ-03", "CRITICAL", table_name, row["company_id"], row.get("year"), "company_id", "Orphan row"))
+    return out
+
+
 def dq04_balance_sheet_balance(bs: pd.DataFrame) -> List[Violation]:
     out = []
     valid = bs[(bs["total_assets"].notna()) & (bs["total_assets"] != 0)]
@@ -50,6 +72,15 @@ def dq06_positive_sales(pl: pd.DataFrame, financial_tickers: set) -> List[Violat
         out.append(_v("DQ-06", "WARNING", "profitandloss", row["company_id"], row["year"],
                        "sales", f"Non-positive sales ({row['sales']}) for non-financial company", row["sales"]))
     return out
+
+
+def dq07_unparseable_year(company_id, table, raw_value):
+    return _v("DQ-07", "CRITICAL", table, company_id, raw_value, "year",
+              "Unparseable fiscal year label", raw_value)
+
+def dq08_unparseable_ticker(table, raw_value):
+    return _v("DQ-08", "CRITICAL", table, raw_value, None, "company_id",
+              "Unparseable/invalid ticker", raw_value)
 
 
 def dq09_net_cash_check(cf: pd.DataFrame) -> List[Violation]:
